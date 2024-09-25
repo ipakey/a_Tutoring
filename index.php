@@ -27,7 +27,7 @@
 
 <body>
     <header>
-        <h4>Yfke</h4>
+        <!-- <h4>Yfke</h4> -->
     </header>
     <main>
         <?php include('./pages/calendar.php'); ?>

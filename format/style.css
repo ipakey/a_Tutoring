@@ -170,8 +170,9 @@ a:hover {
     margin: 0 auto;
 }
 
-.calendar .month-btns {
-    /* display: flex; */
+.month-btns {
+    font-size: 0.8rem;
+    color: var(--clr-light);
     width: 80%;
     justify-content: space-between;
     padding: 0 0px;
@@ -251,7 +252,7 @@ tr {
     display: flex;
     flex-flow: row nowrap;
     border-radius: 12px;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-darkest);
     color: var(--clr-light);
 }
 
@@ -396,8 +397,8 @@ tr {
     /* color: #fff; */
 }
 
-.calendar::before,
-.calendar::after {
+.month::before,
+.month::after {
     content: "";
     position: absolute;
     top: 5.9%;
@@ -416,6 +417,11 @@ tr {
     border-radius: 0 5px 5px 0;
     transform: translateY(-4%);
     width: 24px;
+}
+
+.month {
+    background-color: var(--clr-darkest);
+    color: var(--clrl-vlight);
 }
 
 .calendar .weekdays {
@@ -460,30 +466,33 @@ tr {
     border: var(--clr-light) solid 1px;
     color: var(--clr-light);
     font-family: var(--fnt-advert);
+    margin: 2px;
 }
 
 .calendar .prev-day,
 .calendar .next-day {
-    color: var(--clr-outOfTime);
+    color: var(--clr-dark);
 
 }
 
 .today {
     position: relative;
-    padding: 10px 5px;
+    margin: 3px;
+    padding: 0px 5px;
     font-size: .8rem;
-    box-shadow: 6px 10px var(--clr-today);
-    border-radius: 25px;
+    box-shadow: 0 0 10px 6px var(--clr-today);
+    border-radius: 2rem;
+    /* z-index: 50; */
 }
+
 
 .today::before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 7px;
     offset: 6px 6px;
-    width: 80%;
-    height: 80%;
-    box-shadow: 0 0 10px 6px var(--clr-today);
+    width: 60%;
+    height: 60%;
 }
 
 .calendar .days .active {
@@ -1008,29 +1017,32 @@ input:valid+span::after {
 }
 
 .btn-na {
-    border: solid 2px var(--clr-darkest);
-    border-radius: .6rem;
-    color: var(--clr-react);
-    background-color: var(--clr-dark);
+    border: solid 2px var(--clr-light);
+    border-radius: .2rem;
+    color: var(--clr-dark);
+    background-color: transparent;
     font-size: 0.6rem;
     width: 100%;
+    margin: 0px .4rem;
+
 }
 
 .btn-bk {
-    border: solid 4px var(--clr-light);
-    border-radius: 0.6rem;
+    border: solid 2px var(--clr-light);
+    border-radius: .2rem;
     color: var(--clr-darkest);
-    background-color: var(--clrl-vlight);
+    background-color: transparent;
     font-size: 0.6rem;
+    margin: 0px .4rem;
     width: 100%;
-    box-shadow: 0 0 40px 40px var(--clr-dark) inset, 0 0 0 0 var(--clr-medium);
-    transition: all 150ms ease-in-out;
+
 
 
 }
 
 .btn-bk:hover {
-    background-color: var(--clr-light);
+    /* background-color: var(--clr-light); */
+    border-radius: 4rem;
     border-color: solid 2px var(--clr-darkest);
     box-shadow: 0 0 10px 0 var(--clr-dark) inset, 0 0 10px 4px var(--clr-light);
     transition-property: var(--clr-contrast), var(--clr-light), var(--clr-darkest), var(--clr-dark), fill, stroke;
@@ -1041,6 +1053,7 @@ input:valid+span::after {
 
 .date-book {
     text-decoration: none;
+    color: var(--clrl-vlight);
 }
 
 
@@ -1077,7 +1090,7 @@ input:valid+span::after {
     background-color: transparent;
     border: 2px solid var(--clr-darkest);
     border-radius: 1.6rem;
-    color: var(--clr-dark);
+    /* color: var(--clr-dark); */
     cursor: pointer;
     display: flex;
     align-self: center;
