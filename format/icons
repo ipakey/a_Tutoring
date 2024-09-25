@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Cinzel Decorative', cursive;
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alex+Brush&family=Caveat&family=Condiment&family=Explora&display=swap" rel="stylesheet">
+
+font-family: 'Aboreto', cursive;
+font-family: 'Alex Brush', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Condiment', cursive;
+font-family: 'Explora', cursive;
+
+
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi&display=swap" rel="stylesheet">
+
+
+
+
+<!-- ? Variables -->
+--fnt-subheadings: 'Alex Brush', cursive;
+--fnt-heading: 'Caveat', cursive;
+--fnt-highlight: 'Aboreto', cursive;
+--fnt-insert: 'Condiment', cursive;
+--fnt-advert: 'Explora', cursive;
+--fnt-date: 'Dosis', sans-serif;
+--fnt-buttons: 'Yaldevi', sans-serif;

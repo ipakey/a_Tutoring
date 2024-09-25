@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../calendar_app/assests/images"
+		},
+		{
+			"path": "../../../calendar_app/assests/icons"
+		}
+	],
+	"settings": {
+		"eslint.alwaysShowStatus": true
+	}
+}

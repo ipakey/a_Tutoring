@@ -1,0 +1,30 @@
+                    <div class="event">
+                        <div class="title">
+                            <img class="list-icon" src="./icons/cogs.png" alt="" srcset="">
+                            <h3 class="event-time">10:00 - 11:00</h3>
+                            <h3 class="event-title">Put the cat out before bed</h3>
+                        </div>
+                        <div class="details">
+                            <p>This is the details for the task and updates etc.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="title">
+                            <img class="list-icon" src="./icons/cogs.png" alt="" srcset="">
+                            <h3 class="event-time">10:00 - 11:00</h3>
+                            <h3 class="event-title">Load dishwasher</h3>
+
+                    
+                        </div><div class="details">
+                            <p>This is the details for the task and updates etc.</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="title">
+                            <img class="list-icon" src="./icons/cogs.png" alt="" srcset="">
+                            <h3 class="event-time">10:00 - 11:00</h3>
+                            <h3 class="event-title">Cocco before bed</h3>
+                        </div><div class="details">
+                            <p>This is the details for the task and updates etc.</p>
+                        </div>    
+                    </div>

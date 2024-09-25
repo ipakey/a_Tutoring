@@ -1,0 +1,26 @@
+if(e.target.classList.contains("prev-date")){
+        
+    console.log("reached prevMonth() ");
+    
+    prevMonth();
+
+    console.log( 'first day: ' + firstDay + ' last day: ' + lastDay + ' prev last day: ' + prevLastDay + ' prev days: ' + prevDays + 'last date: ' + lastDate + ' day: ' + day + ' next days: ' + nextDays);
+
+    setTimeout(() => {
+      //select all days of that month
+      const days = document.querySelectorAll(".day");
+
+      //after going to the prev month add active to the clicked day
+
+      days.forEach((day) =>{
+        if(
+          !day.classList.contains("prev-date") &&
+          day.innerHTML === e.target.innerHTML
+        ){
+          day.classList.add("active");
+          console.log("active day L356: " + day.classList);
+        }
+      });
+    }, 100);
+
+  };
