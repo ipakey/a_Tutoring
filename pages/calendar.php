@@ -66,7 +66,7 @@ function build_calendar($month, $year)
     //create html table
 
     $calendar = "<div class='month'>";
-    $calendar .= "<center><h2 class='month'>$monthName $year</h2></tr>
+    $calendar .= "<center><h2>$monthName $year</h2></tr>
     <tr><center>";
     $calendar .= "<a class='month-btns' href='?month=" . date("m", mktime(0, 0, 0, $month - 1, 1, $year)) . "&year=" . date("Y", mktime(0, 0, 0, $month - 1, 1, $year)) . "'> <img class='arrow prev' src='./images/navigateLeftBlue.png' alt='left arrow'> Previous Month</a>";
 
@@ -106,7 +106,7 @@ function build_calendar($month, $year)
         $dayName = strtolower(date('I', strtotime($date)));
         $eventNum = 0;
 
-        $today = $date == date('Y-m-d') ? "today" : "";
+        $today = $date == date('Y-m-d') ? "today" : "day";
         if ($date < date('Y-m-d')) {
             $calendar .= "<td><button class='btn-na'><h4>$currentDay</h4>N/A</button></td>";
         } else {
@@ -138,6 +138,18 @@ function build_calendar($month, $year)
 
 <container>
     <div class="row">
+        <!-- <div class="calendar-header">
+            <span class="month-picker" id="month-picker">Jan</span>
+            <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                    <pre><</pre>
+                </span>
+                <span id="year">2024</span>
+                <span class="year-change" id="next-year">
+                    <pre>></pre>
+                </span>
+            </div>
+        </div> -->
         <div class="page">
             <?php
             $dateComponents = getDate();

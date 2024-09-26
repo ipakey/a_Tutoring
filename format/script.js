@@ -66,7 +66,7 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 const eventsArr = [
   {
     day: 16,
-    month: 05,
+    month: 5,
     year: 2023,
     events: [
       {
@@ -84,8 +84,8 @@ const eventsArr = [
     ],
   },
   {
-    day: 05,
-    month: 05,
+    day: 5,
+    month: 5,
     year: 2023,
     events: [
       {
@@ -520,3 +520,21 @@ function convertTime(time) {
   console.log('Time calc L558: ' + time)
   return time
 }
+
+//Date & Year Picker
+// let currDate = new Date()
+
+// let curr_month = { value: currDate.getMonth() }
+// let curr_year = { value: currDate.getFullYear() }
+
+// generateCalendar(curr_month.value, curr_year.value)
+
+// document.querySelector('#prev-year').onclick = () => {
+//   --curr_year.value
+//   generateCalendar(curr_month.value, curr_year.value)
+// }
+
+// document.querySelector('#next-year').onclick = () => {
+//   ++curr_year.value
+//   generateCalendar(curr_month.value, curr_year.value)
+// }
